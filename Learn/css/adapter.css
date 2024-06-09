@@ -1,0 +1,33 @@
+/* 适应大小 */
+/* 当屏幕宽度为982时 */
+@media (max-width: 1200px) {
+  /* 左侧菜单大小 */
+  div.menu {
+    width: 15%;
+  }
+  /* 左侧菜单的标签字体大小 */
+  div.left_information li {
+    line-height: 5.5em;
+    font-size: 20px;
+  }
+  div.left_information p.header {
+    font-size: 26px;
+  }
+
+  /* 主要内容区域 */
+  div.content {
+    /* position: absolute; */
+    left: 17%;
+    top: 10%;
+    bottom: 0;
+  }
+  /* 主要内容区域-背景图片 */
+  div.image, img.beach {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 720px) {
+
+}

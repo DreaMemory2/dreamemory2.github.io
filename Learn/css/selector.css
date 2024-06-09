@@ -1,0 +1,8 @@
+a:hover {
+  display: inline-block;
+  padding: 15px 10px;
+  text-align: center;
+  color: white;
+  background-color: #5A5A87;
+  border-radius: 35%;
+}
