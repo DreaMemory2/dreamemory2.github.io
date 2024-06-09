@@ -1,8 +1,18 @@
-a:hover {
-  display: inline-block;
-  padding: 15px 10px;
+a.current-menu-item:hover {
   text-align: center;
   color: white;
   background-color: #5A5A87;
-  border-radius: 35%;
+  border-radius: 45px;
+}
+
+a.information:hover {
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 95%;
+  background-color: var(--b-cornflower-blue);
+  border-radius: 50px;
+}
+
+a.info_introduce:hover, a.info_news:hover {
+  color: var(--b-dusk-three);
 }

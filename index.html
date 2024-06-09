@@ -3,38 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <title>布鲁伊个人网站设计</title>
+  <link rel="stylesheet" href="./css/color.css" />
   <link rel="stylesheet" href="./css/mian.css" />
   <link rel="stylesheet" href="./css/adapter.css" />
   <link rel="stylesheet" href="./css/selector.css" />
   <link rel="icon" href="./image/bluey.ico" type="image/x-icon">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" ></script>
 
 </head>
 <body>
   <div class="container">
+    <!-- 导航栏 -->
     <div class="header">
-      <div class="direct">
-        <div class="menu-item">
-          <li><a href="#" class="current-menu-item">首页</a></li>
-          <li><a href="#" class="current-menu-item">角色</a></li>
-          <li><a href="#" class="current-menu-item">视频</a></li>
-          <li><a href="#" class="current-menu-item">相册</a></li>
-          <li><a href="#" class="current-menu-item">商站</a></li>
-          <li><a href="#" class="current-menu-item">关于</a></li>
-          <li><a href="#" class="current-menu-item">其他</a></li>
-        </div>
-      </div>
+      <nav class="menu-item" id="nav">
+        <li><a href="#" class="current-menu-item">首页</a></li>
+        <li><a href="#" class="current-menu-item">角色</a></li>
+        <li><a href="#" class="current-menu-item">视频</a></li>
+        <li><a href="#" class="current-menu-item">相册</a></li>
+        <li><a href="#" class="current-menu-item">商站</a></li>
+        <li><a href="#" class="current-menu-item">关于</a></li>
+        <li><a href="#" class="current-menu-item">其他</a></li>
+      </nav>
     </div>
 
-    <main>
+    <main id="panel" class="site" aria-label="Main Content">
       <!-- 菜单侧栏，左侧栏 -->
       <div class="menu">
         <div class="left_information">
           <img src="./image/header.jpg" class="header">
           <p class="header">回忆美好</p>
-          <li>我的主页</li>
-          <li>我的动态</li>
-          <li>自我介绍</li>
-          <li>联系我们</li>
+          <li><a href="#" class="information">我的主页</a></li>
+          <li><a href="#" class="information">我的动态</a></li>
+          <li><a href="#" class="information">自我介绍</a></li>
+          <li><a href="#" class="information">联系我们</a></li>
         </div>
       </div>
       
@@ -47,8 +48,8 @@
           <p class="meet">初次见面，一起看布鲁伊吧！</p>
           <h1>欢迎来访</h1>
           <p class="blog">个|人|网|站</p>
-          <div class="introduce">自我介绍</div>
-          <div class="news">最新消息</div>
+          <div class="introduce"><a href="#" class="info_introduce">自我介绍</a></div>
+          <div class="news"><a href="#" class="info_news">最新消息</a></div>
           <div class="energy">因为热爱，所以才有动力</div>
           <div class="energy_English">Motivation comes from here</div>
           <p class="grown">与众期待，共同成长</p>

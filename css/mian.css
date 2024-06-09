@@ -1,66 +1,56 @@
 * {
   margin: 0;
   padding: 0;
+  border: 0;
 }
 
 body {
   height: 100%;
-  background-color: #C2E3FE;
+  background-color: var(--bg-color);
 }
 
 /* 容器 */
 .container {
-  background-color: #C2E3FE;
+  background-color: var(--bg-color);
 }
 
-/*导航栏*/
+/* 导航栏 固定菜单位置-顶部 */
 div.header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
+  background-color: var(--b-header-color);
 }
 
 .menu-item {
-  /* 排列方式 */
-  display: inline-flex;
+  /* 横向排列 */
   list-style: none;
-}
-
-.direct {
-  /* 菜单位置 */
   display: flex;
-  background-color: white;
+  align-items: center;
+  justify-content: center;
 }
 
-/* 导航栏 */
-.menu-item li {
-  font-family: "MYoungHeiPRC";
-  font-size: 34px;
-  color: #5A5A87;
-  margin-left: 40px;
-  padding: 10px 15px;
+/* 导航栏中的内容部分 */
+.menu-item > li {
+  display: flex;
+}
+
+/* 主要区域 */
+main.site {
+  position: relative;
+  margin: 10px 15px;
+  bottom: 0;
 }
 
 /*左侧栏*/
 .menu {
   /* 弹性布局 + 左对齐 */
-  display: flex;
-  justify-content: left;
-
-  position: absolute;
-  margin: 10px 15px;
-  top: 10%;
-  bottom: 0;
+  float: left;
   background: #87CEFA;
-
   width: 13%;
+  padding-bottom: 24px;
 }
 
 /* 左侧栏的信息 */
 .left_information {
   list-style: none;
-
   font-family: "MYoungHeiPRC";
   font-size: 25px;
   color: #5A5A87;
@@ -93,22 +83,16 @@ div.left_information img {
 .content {
   /* 弹性布局 + 左对齐 */
   display: flex;
-  justify-content: left;
-
-  position: absolute;
-  bottom: 0;
-  width: fit-content;
-  margin: 10px 15px;
+  position: relative;
+  left: 15px;
+  margin-right:15px;
   background: -webkit-linear-gradient(#65BECD, #BBE2ED, #F4E8CF);
-  left: 15%;
-  z-index: -1;
 }
 
 img.beach {
   position: relative;
   height: 100%;
   width: 100%;
-  z-index: -1;
 }
 
 div.image {
@@ -195,7 +179,18 @@ p.grown {
   font-weight: bold;
 }
 
-a.current-menu-item {
+/* 标签页 */
+a {
   text-decoration: none;
+  color: white;
+}
+
+a.current-menu-item {
+  display: flex;
+  font-family: "MYoungHeiPRC";
+  align-items: center;
+  font-size: 2.3rem;
+  padding: 10px 20px;
+  align-items: center;
   color: #5A5A87;
 }
