@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   border: 0;
+  /* 设置的边框和内边距的值是包含在总宽高内的 */
+  box-sizing: border-box;
 }
 
 body {
@@ -22,7 +24,7 @@ div.header {
 /* 标签页 */
 a {
   text-decoration: none;
-  color: white;
+  color: var(--b-header-color);
 }
 
 .menu-item {
@@ -38,6 +40,12 @@ a {
   display: flex;
 }
 
+/* 菜单按钮 */
+.menu_button {
+  background-image: url(https://www.bluey.tv/wp-content/themes/bbc-bluey/assets/images/icons/ico-menu-hamburger.svg);
+  display: none;
+}
+
 /* 主要区域 */
 main.site {
   position: relative;
@@ -49,7 +57,7 @@ main.site {
 .menu {
   /* 弹性布局 + 左对齐 */
   float: left;
-  background: #87CEFA;
+  background:#87CEFA;
   width: 13%;
   padding-bottom: 24px;
 }
@@ -59,7 +67,7 @@ main.site {
   list-style: none;
   font-family: "MYoungHeiPRC";
   font-size: 25px;
-  color: #5A5A87;
+  color: var(--b-dusk-three);
   margin: 20px;
   padding: 10px 10px;
 }
@@ -68,7 +76,7 @@ main.site {
 div.left_information li {
   text-align: center;
   line-height: 4em;
-  color: white;
+  color: var(--b-header-color);
 }
 
 /* 头像名称 */
@@ -108,7 +116,7 @@ div.image {
 
 .fonts h1, p.blog {
   top: 0;
-  color: white;
+  color: var(--b-header-color);
 }
 
 .fonts h1, p.blog, p.meet, p.grown, div.news, div.introduce, .energy, .energy_English {
@@ -120,7 +128,7 @@ div.image {
 p.meet {
   left: 4%;
   top: 7%;
-  color: white;
+  color: var(--b-header-color);
   font-size: 20px;
   font-weight: bold;
 }
@@ -152,10 +160,10 @@ div.introduce, div.news {
   bottom: 5%;
   height: 12%;
   width: 12%;
-  color: white;
+  color: var(--b-header-color);
   font-size: 30px;
   font-weight: bold;
-  background-color: #87CEFA;
+  background-color: var(--bg-color);
   border-radius: 20%;
 }
 
@@ -169,20 +177,20 @@ div.energy {
   right: 4%;
   font-size: 30px;
   font-family: "思源黑体";
-  color: white;
+  color: var(--b-header-color);
 }
 div.energy_English {
   top: 9%;
   right: 4%;
   font-size: 20px;
-  color: white;
+  color: var(--b-header-color);
 }
 
 /* 共同成长 */
 p.grown {
   bottom: 5%;
   right: 4%;
-  color: #5A5A87;
+  color: var(--b-dusk-three);
   font-weight: bold;
 }
 
@@ -193,5 +201,5 @@ a.current-menu-item {
   font-size: 2.3rem;
   padding: 10px 20px;
   align-items: center;
-  color: #5A5A87;
+  color: var(--b-dusk-three);
 }
