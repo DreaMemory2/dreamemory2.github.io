@@ -19,6 +19,12 @@ div.header {
   background-color: var(--b-header-color);
 }
 
+/* 标签页 */
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .menu-item {
   /* 横向排列 */
   list-style: none;
@@ -66,9 +72,10 @@ div.left_information li {
 }
 
 /* 头像名称 */
-.left_information p.header {
+.left_information a.header {
   margin-top: 10px;
   font-size: 30px;
+  color: var(--b-dusk-three);
 }
 
 /* 头像 */
@@ -177,12 +184,6 @@ p.grown {
   right: 4%;
   color: #5A5A87;
   font-weight: bold;
-}
-
-/* 标签页 */
-a {
-  text-decoration: none;
-  color: white;
 }
 
 a.current-menu-item {
